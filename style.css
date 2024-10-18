@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
 :root{
-    --cor01: #f9fff5;
-    --cor02: #260101;
-    --cor03: #8CA685;
-    --cor04: #7EA1BF;
-    --cor05: #516DA6;
+    --cor01: #141a12;
+    --cor02: #dbe0b9;
+    --cor03: #e8ebe8;
+    --cor04: #df7d5f;
+    --cor05: #e48d0a;
     --mainFont: 'Playfair Display', serif;
     --d: 0s;
-    --sombra: rgba(0, 0, 0, 0.34);
+    --sombra: rgba(248, 5, 5, 0.34);
+    font-weight: 600;
+    font-family: serif;
 }
 *{
     padding: 0;
@@ -33,7 +35,10 @@ body{
     display: flex; /*none*/ /*flex*/
     flex-direction: column;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;   
+    font-family:Verdana; 
+    font-size: smaller;
+
 }
 
 .convite-frase span{
@@ -42,6 +47,9 @@ body{
     text-align: center;
     opacity: 0;
     animation: aparecer 0.5s forwards var(--d); 
+    font-size: 1.9rem
+    
+    
 }
 
 .tema-quiz img{
@@ -49,22 +57,28 @@ body{
 }
 
 .iniciar-quiz{
-    font-size: 1.2rem;
-    color: var(--cor01);
+    font-size: 25px;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: blueviolet;
     cursor: pointer;
-    padding: 5px;
-    margin: 3px;
-    background-color: var(--cor03);
+    padding: 10px;
+    margin: 5px;
+    background-color: burlywood;
     border-radius: 10px;
     outline: none;
-    border: none;
+    border: #260101;
     box-shadow: 0px 0px 5px var(--sombra);
-    transition: .5s;
+    transition: var(--cor02);
     opacity: 0;
-    animation: aparecer 0.5s forwards var(--d);
+    animation: aparecer 0.2s forwards var(--d);
+    font-family: cursive;
+
+    
 }
 .iniciar-quiz:hover{
     transform: scale(1.1);
+    
 }
 
 .formulario{
